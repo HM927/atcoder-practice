@@ -1,0 +1,9 @@
+H, W = map(int, input().split())
+
+for i in range(H):
+    for j in range(W):
+        if(j == 0 or j == W - 1 or i == 0 or i == H - 1):
+            print('#', end='')
+        else:
+            print('.', end='')
+    print()
